@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Disha Jain · Resume</title>
+<meta name="description" content="Disha Jain: business student at Mesa School of Business and IIMB. Marketing, operations and founding-team experience across startups.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF3F5; --surface:#FFFFFF; --ink:#18232F; --muted:#5A6B7A;
+  --line:#D6E0E5; --teal:#0F6E6E; --teal-soft:#D8EDEA; --peach:#F8D5BC; --sky:#CFE3F1;
+  --display:"Bricolage Grotesque",Georgia,serif; --body:"Figtree",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 1rem/1.65 var(--body);color:var(--ink);background:var(--bg)}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);line-height:1.15;letter-spacing:-.01em}
+
+.layout{max-width:1120px;margin:0 auto;padding:2rem 1.25rem 3rem;display:grid;grid-template-columns:320px 1fr;gap:2.5rem;align-items:start}
+
+.profile{position:sticky;top:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:1.75rem;overflow:hidden}
+.photo{width:100%;aspect-ratio:4/5;border-radius:18px;background:linear-gradient(145deg,var(--peach),var(--sky));position:relative;overflow:hidden;margin-bottom:1.4rem}
+.photo span{position:absolute;inset:0;display:grid;place-items:center;font:700 4.5rem var(--display);color:var(--teal);opacity:.55}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.profile h1{font-size:2.1rem}
+.tagline{color:var(--muted);margin:.5rem 0 1.25rem}
+.profile nav ul{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+.profile nav a{display:block;padding:.3rem .8rem;border-radius:99px;background:var(--bg);color:var(--ink);text-decoration:none;font-size:.9rem;font-weight:500;transition:background .2s}
+.profile nav a:hover{background:var(--teal-soft)}
+address{font-style:normal;margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--line);display:grid;gap:.35rem;font-size:.95rem}
+
+main{display:grid;gap:1.25rem}
+section{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:2rem}
+section h2{font-size:1.55rem;margin-bottom:1.25rem}
+.intro{background:var(--teal);color:#fff;border-color:var(--teal)}
+.intro h2{color:#fff}
+.intro p{font-size:1.15rem;max-width:62ch}
+.intro p+p{margin-top:.9rem;opacity:.9;font-size:1rem}
+
+.timeline{list-style:none;padding:0;border-left:2px solid var(--line);margin-left:.4rem}
+.timeline li{position:relative;padding:0 0 1.75rem 1.6rem}
+.timeline li:last-child{padding-bottom:0}
+.timeline li::before{content:"";position:absolute;left:-7px;top:.55rem;width:12px;height:12px;border-radius:50%;background:var(--surface);border:3px solid var(--teal)}
+.timeline li.now::before{background:var(--teal)}
+article h3{font-size:1.2rem}
+.role{color:var(--muted);font-size:.95rem;margin:.1rem 0 .6rem}
+.badge{display:inline-block;background:var(--teal-soft);color:var(--teal);font-size:.78rem;font-weight:600;padding:.1rem .6rem;border-radius:99px;margin-left:.4rem;vertical-align:middle}
+article ul{padding-left:1.1rem;display:grid;gap:.3rem}
+
+.edu{display:grid;gap:.15rem}
+.edu+.edu{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--line)}
+.project{display:grid;grid-template-columns:auto 1fr;gap:1.25rem;align-items:start}
+.project .mark{width:84px;height:84px;border-radius:20px;background:linear-gradient(160deg,var(--peach),#F6B9B0 60%,var(--sky));display:grid;place-items:center;font:700 1.9rem var(--display);color:var(--ink)}
+.chips{list-style:none;padding:0!important;display:flex!important;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
+.chips li{background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:.1rem .7rem;font-size:.85rem}
+
+.table-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.97rem}
+caption{text-align:left;color:var(--muted);font-size:.9rem;padding-bottom:.6rem}
+th,td{text-align:left;padding:.7rem .8rem;border-bottom:1px solid var(--line)}
+thead th{font-weight:600;background:var(--bg)}
+thead th:first-child{border-radius:10px 0 0 10px}thead th:last-child{border-radius:0 10px 10px 0}
+meter{width:110px;height:.6rem}
+
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+dl{display:grid;gap:.6rem}
+dt{font-weight:600}
+dd{color:var(--muted)}
+.hobbies{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:.5rem}
+.hobbies li{background:var(--teal-soft);color:var(--ink);border-radius:99px;padding:.25rem .9rem;font-weight:500}
+
+footer{grid-column:1/-1;text-align:center;color:var(--muted);font-size:.9rem;padding-top:1rem}
+
+@media (max-width:860px){
+  .layout{grid-template-columns:1fr;gap:1.25rem}
+  .profile{position:static}
+  .photo{max-width:260px}
+  .cols{grid-template-columns:1fr}
+  section{padding:1.5rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="layout">
+
+<header class="profile">
+  <figure class="photo">
+    <span aria-hidden="true">DJ</span>
+    <!-- Save your picture as photo.jpg next to this file -->
+    <img src="photo.jpg" alt="Portrait of Disha Jain" onerror="this.remove()">
+  </figure>
+  <h1>Disha Jain</h1>
+  <p class="tagline">Business student and early-stage builder. I turn messy ideas into brands, events and teams that run.</p>
+  <nav aria-label="Page sections">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#beyond">Beyond work</a></li>
+    </ul>
+  </nav>
+  <address>
+    <a href="mailto:dishanahata1709@gmail.com">dishanahata1709@gmail.com</a>
+    <a href="https://www.linkedin.com/feed/foryou/" rel="noopener">LinkedIn</a>
+    <span>Karnataka, India</span>
+  </address>
+</header>
+
+<main>
+  <section id="about" class="intro" aria-labelledby="about-h">
+    <h2 id="about-h">About me</h2>
+    <p>I am a first-year business student at Mesa School of Business and IIMB. In 2026 alone I have worked across marketing, sales and operations at four young companies, and I have taken on freelance content work for small businesses.</p>
+    <p>I grew up in Raichur in a family of agricultural traders. I want roles where I can build from zero, own outcomes early and work with people who care about craft.</p>
+  </section>
+
+  <section id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h">Experience</h2>
+    <ol class="timeline">
+      <li class="now">
+        <article>
+          <h3>Fanout <span class="badge">Current</span></h3>
+          <p class="role">Marketing Intern · EdTech platform for engineers · <time datetime="2026">2026</time> to present</p>
+          <ul>
+            <li>Marketing for a platform that helps engineers learn AI and tech topics in the most efficient way possible.</li>
+            <li>Developing content ideas for educational videos aimed at engineers.</li>
+          </ul>
+        </article>
+      </li>
+      <li class="now">
+        <article>
+          <h3>Idli Studios <span class="badge">Current</span></h3>
+          <p class="role">Founding team member · Creative agency for web design, branding and pitch decks · <time datetime="2026">2026</time> to present</p>
+          <ul>
+            <li>One of four founding members. Handle content, strategy and sales.</li>
+            <li>Built the agency's marketing strategy: LinkedIn for trust, Instagram for visual proof.</li>
+            <li>Created launch reel concepts, Instagram content pillars and a client-facing SOP document.</li>
+            <li>Designed a cold outreach system for real estate agents.</li>
+          </ul>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>Rizz Entertainment</h3>
+          <p class="role">Marketing and Operations Head · On-demand event staffing in Bengaluru and Mumbai · <time datetime="2026">2026</time></p>
+          <ul>
+            <li>Ran day-to-day operations and sales for trained staff at weddings, concerts and corporate events.</li>
+            <li>Built the brand's Instagram from scratch, including banner, explainer carousel, blog posts and a two-week content calendar.</li>
+            <li>Wrote cold outreach templates for Instagram DMs, email and calls to win event organiser clients.</li>
+          </ul>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>Synqit</h3>
+          <p class="role">Marketing Intern · AI-native ECAD platform, “Cursor for hardware” · <time datetime="2026">2026</time></p>
+          <ul>
+            <li>Built a targeted prospect list of hardware founders and engineers in India with Apollo.io for outreach.</li>
+            <li>Created carousel content and a Reddit marketing strategy and an Instagram content calendar for a technical product.</li>
+            <li>Worked across marketing and sales for a platform that turns hardware ideas into full component lists.</li>
+          </ul>
+        </article>
+      </li>
+      <li>
+        <article>
+          <h3>Freelance content and social media</h3>
+          <p class="role">Independent · <time datetime="2026">2026</time></p>
+          <ul>
+            <li>Video content creation for small business clients, with strong Instagram reach.</li>
+            <li>Manage LinkedIn content calendars for an Astro-Vastu practice and its founder.</li>
+            <li>Produce brand reels for an international client through Idli Studios.</li>
+          </ul>
+        </article>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" aria-labelledby="proj-h">
+    <h2 id="proj-h">Projects</h2>
+    <article class="project">
+      <div class="mark" aria-hidden="true">Q</div>
+      <div>
+        <h3>quenchhco · Ice pops brand</h3>
+        <p class="role">Build Your Own Business (BYOB) course project · <time datetime="2026">2026</time></p>
+        <p>In BYOB, our team had to build a real business from scratch. We created quenchhco, an ice pops brand, and launched its website built with Lovable.</p>
+        <p style="margin-top:.6rem"><a href="https://quenchhco.in" rel="noopener">Visit quenchhco.in</a></p>
+        <ul class="chips" aria-label="Tools used">
+          <li>Lovable</li><li>Brand building</li><li>Team project</li>
+        </ul>
+      </div>
+    </article>
+    <article class="project" style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--line)">
+      <div class="mark" aria-hidden="true">L</div>
+      <div>
+        <h3>LifeOS · Personal productivity app</h3>
+        <p class="role">Solo project</p>
+        <p>A web app that brings week planning, habit tracking, goals and a journal into one place, with an AI assistant. I also looked into how to price it and manage AI usage costs.</p>
+        <ul class="chips" aria-label="Tools used">
+          <li>Lovable</li><li>React</li><li>TypeScript</li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <section id="education" aria-labelledby="edu-h">
+    <h2 id="edu-h">Education</h2>
+    <article class="edu">
+      <h3>Mesa School of Business, Bangalore</h3>
+      <p class="role">Undergraduate · Business Management and Entrepreneurship · <time datetime="2026">2026</time> to present · 80% tuition scholarship</p>
+    </article>
+    <article class="edu">
+      <h3>IIM Bangalore (online)</h3>
+      <p class="role">Online undergraduate business degree · <time datetime="2026">2026</time> to present</p>
+    </article>
+    <article class="edu">
+      <h3>Patil's Academy</h3>
+      <p class="role">Classes 11 and 12 · 95.6% in Class 12 (PCM and Computer Science)</p>
+    </article>
+    <article class="edu">
+      <h3>Edify International School</h3>
+      <p class="role">Up to Class 10</p>
+    </article>
+  </section>
+
+  <section id="skills" aria-labelledby="skill-h">
+    <h2 id="skill-h">Skills</h2>
+    <div class="table-wrap">
+      <table>
+        <caption>What I can do and where I have done it</caption>
+        <thead><tr><th scope="col">Skill</th><th scope="col">Where I used it</th><th scope="col">Tools</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Social media and content strategy</th><td>Idli Studios, Rizz Entertainment, Synqit, freelance</td><td>Instagram, LinkedIn, Reddit</td></tr>
+          <tr><th scope="row">Cold outreach and sales</th><td>Synqit, Rizz Entertainment, Idli Studios</td><td>Apollo.io, email, Instagram DMs</td></tr>
+          <tr><th scope="row">Event operations</th><td>Rizz Entertainment</td><td>Staff scheduling and coordination</td></tr>
+          <tr><th scope="row">Brand building</th><td>quenchhco, Idli Studios</td><td>Carousels, reels, pitch decks</td></tr>
+          <tr><th scope="row">Short-form video</th><td>Freelance, Idli Studios</td><td>Reels and edits</td></tr>
+          <tr><th scope="row">Building websites and apps</th><td>quenchhco, LifeOS</td><td>Lovable, React, TypeScript</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="achievements" aria-labelledby="ach-h">
+    <h2 id="ach-h">Achievements and leadership</h2>
+    <dl>
+      <dt>Head Girl and Sports Captain</dt><dd>Led my school as Head Girl and overall Sports Captain.</dd>
+      <dt>District-level Throwball</dt><dd>Played at district level and captained the team.</dd>
+      <dt>Inter-school poetry gold medal</dt><dd>Won gold in an inter-school poetry competition.</dd>
+      <dt>95.6% in Class 12</dt><dd>Science stream with Physics, Chemistry, Maths and Computer Science.</dd>
+      <dt>Volunteer, JPP Foundation</dt><dd>Contributed volunteer work to the foundation.</dd>
+    </dl>
+  </section>
+
+  <section id="beyond" aria-labelledby="beyond-h">
+    <h2 id="beyond-h">Beyond work</h2>
+    <div class="cols">
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:.6rem">Sports</h3>
+        <p style="color:var(--muted)">Throwball at district level, and 200 m running.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.05rem;margin-bottom:.6rem">Hobbies</h3>
+        <ul class="hobbies"><li>Cooking</li><li>Reading books</li><li>Watching movies</li></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© <time datetime="2026">2026</time> Disha Jain</p>
+</footer>
+
+</div>
+</body>
+</html>
